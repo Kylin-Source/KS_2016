@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+GIT 分布式 速度快 灵活 不需要网便可以使用
+    没有专门的"中央服务器" 每一台电脑都是一个完整的版本库
+SVN 集中式 速度慢，需要有网才可以使用
+    有专门的一台"中央服务器"来存放所有的版本库
+
+打开git bash
+$ git config --global user.name Kylin_Source
+$ git config --global user.email 47094180@qq.com
+ -->
+
+ <!--
+版本库
+shop文件夹
+  -->
+git init
+git add 文件名                    |  添加到GIT仓库里
+git commit -m '提交日志记录信息'  |  提交到GIT仓库中
+git status                        |  查看是否提交成功
+[提示] mothing to commit, working directory  提交成功
+[提示] 出现红色代码                     本地文件被修改
+
+  |  1
+  |  1
+
+additional icons
+    on the desktop
+
+    use a truetype font in all console windows
+
+don't create a start menu folder
+
+use fit from git bash only
+use git from the windows command prompt
+use minTTY(the default terminal of MSYS2)
+use windows default console windows
