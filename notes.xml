@@ -14,6 +14,7 @@ $ git config --global user.email 47094180@qq.com
 版本库
 shop文件夹
   -->
+
 git init
 git add 文件名                    |  添加到GIT仓库里
 git commit -m '提交日志记录信息'  |  提交到GIT仓库中
@@ -31,8 +32,21 @@ git teset --hard 版本号(最少要复制3位)   |  方法二：版本回退
 关闭命令行窗口后：
 git reflog                        |  查看之前所有的reset、commit操作
 git teset --hard 版本号(最少要复制3位)   |  方法二：版本回退
+git diff HEAD -- 1.php            |  区别：版本库、工作区
+git diff                          |  区别：暂存区、工作区
   |  1
 
 D:\>cd 文件路径                   |  进入那个文件
 
 
+绿色的是暂存区被修改 暂存区与版本库不一样
+
+撤销修改
+add之前 红色"!" 工作区 根据提示撤销 git checkout -- 1.php 撤销到与版本库一致的状态
+add之后 绿色"√" 暂存区              git reset HEAD 1.php  返回到与版本库一致的状态
+
+删除文件：针对的提交文件到版本库
+本地删除之后    暂存区              git rm 2.php          删除
+                                    <!-- git reset HEAD    -->
+                                    git commit -m 'delete 2.php'
+删错了
