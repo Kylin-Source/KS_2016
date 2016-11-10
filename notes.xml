@@ -21,17 +21,18 @@ git status                        |  查看是否提交成功
 [提示] mothing to commit, working directory  提交成功
 [提示] 出现红色代码                     本地文件被修改
 
+git log                           |  查看已经提交的日志记录信息
+git log --pretty=oneline          |  更方便的查看  日志记录信息
+git teset --hard HEAD             |  方法一：版本回退
+  HEAD  |  HEAD~     |  HEAD~~    |  HEAD~2
+当前版本|回退一个版本|回退二个版本|回退二个版本
+git teset --hard 版本号(最少要复制3位)   |  方法二：版本回退
+
+关闭命令行窗口后：
+git reflog                        |  查看之前所有的reset、commit操作
+git teset --hard 版本号(最少要复制3位)   |  方法二：版本回退
   |  1
-  |  1
 
-additional icons
-    on the desktop
+D:\>cd 文件路径                   |  进入那个文件
 
-    use a truetype font in all console windows
 
-don't create a start menu folder
-
-use fit from git bash only
-use git from the windows command prompt
-use minTTY(the default terminal of MSYS2)
-use windows default console windows
